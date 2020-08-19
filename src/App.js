@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import alanBtn from "@alan-ai/alan-sdk-web";
 
-const alanKey = "";
+require('dotenv').config();
+
+const alanKey = ""
 
 const App = () => {
 
@@ -20,7 +22,9 @@ const App = () => {
         <div>
             <h1>Alan AI News Feed</h1>
         </div>
+
     );
 }
+
 
 export default App;
