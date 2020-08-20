@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import alanBtn from "@alan-ai/alan-sdk-web";
+import NewsCards from "./components/NewsCards/NewsCards";
+
 
 require('dotenv').config();
 
-const alanKey = "385a9608d1538ff30eb66423884de8472e956eca572e1d8b807a3e2338fdd0dc/stage"
+const alanKey = "/stage"
 
 const App = () => {
     const [newsArticles, setNewsArticles] = useState([]);
@@ -22,6 +24,7 @@ const App = () => {
     return(
         <div>
             <h1>Alan AI News Feed</h1>
+            <NewsCards articles={newsArticles} />
         </div>
 
     );
