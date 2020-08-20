@@ -6,7 +6,7 @@ const NewsCards = ({ articles }) => {
         <div>
             {articles.map((article, i) => {
                 return (<NewsCard />)
-            })};
+            })}
         </div>
     )
 }

@@ -5,7 +5,7 @@ import NewsCards from "./components/NewsCards/NewsCards";
 
 require('dotenv').config();
 
-const alanKey = "/stage"
+const alanKey = ""
 
 const App = () => {
     const [newsArticles, setNewsArticles] = useState([]);
@@ -15,7 +15,7 @@ const App = () => {
             key: alanKey,
             onCommand: ( { command, articles } ) => {
                 if (command === "headlines"){
-                    setNewsArticles(articles);
+                    setNewsArticles(articles)
                 }
             } 
         });
